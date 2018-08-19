@@ -83,14 +83,14 @@
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 
-\title[Short title]{Full Title of the Talk} % The short title appears at the bottom of every slide, the full title is only on the title page
+\title[Bloodlesshound]{The Bloodlesshound Prandtl Wing Project} % The short title appears at the bottom of every slide, the full title is only on the title page
 
-\author{John Smith} % Your name
-\institute[UCLA] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+\author{Niel Agenbag} % Your name
+\institute[Unaffiliated] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
-University of California \\ % Your institution for the title page
+Unaffiliated \\ % Your institution for the title page
 \medskip
-\textit{john@smith.com} % Your email address
+\textit{Ludwigprandtlwing@gmail.com} % Your email address
 }
 \date{\today} % Date, can be changed to a custom date
 
@@ -109,6 +109,95 @@ University of California \\ % Your institution for the title page
 %	PRESENTATION SLIDES
 %----------------------------------------------------------------------------------------
 
+\section{Introduction and Project Goals}
+
+\begin{frame}
+\frametitle{Introduction}
+\begin{itemize}
+\item Bloodlesshound Prandtl wing is an independent fork of a NASA Prandtl wing project
+\item See more about it at https://www.nasa.gov/centers/armstrong/news/FactSheets/FS-106-AFRC.html
+\item A technical paper (“On Wings of the Minimum Induced Drag: Spanload Implications for Aircraft and Birds,” NASA/TP – 2016-219072) on the research has been published
+https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20160003578.pdf
+\item The Bloodlesshound project used this paper as a baseline for further work
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Introduction Bloodlesshound}
+
+The Prandtl wing is a tailless aircraft concept.  This aircraft is a research vehicle intended to investigate the bell shaped 
+lift distribution as suggested by Ludwig Prandtl in his 1933 paper on the efficiency of wings with a specific design mass 
+and no span limitation.
+
+The goals of the project are somewhat different from the NASA paper.  The paper focussed on proving the existence of proverse yaw with the Prandtl lift distribution as well as postulating that birds most likely utilize the Prandtl circulation distribution as opposed to the elliptical circulation distribution.  
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Project Goals}
+
+The goals are:
+
+\begin{itemize}
+\item Investigate whether or not a tailless aircraft designed to have a Prandtl lift distribution will have satisfactory unaugmented (no control system except for the pilot and direct gearing of the control surfaces) handling qualities.
+\item Determine the performance characteristics of such an aircraft.  In particular is important to show very favourable L/D characteristics (L/D >= 53 for full scale aircraft) and laminar flow on the wing surfaces, even with reflexed profiles that are common on tailless designs.
+\item A secondary goal of the project is to investigate the feasibility of open hardware design using open source tools (as far as possible).  The focus of this goal is to use tools such as Git for product lifecycle management and to manage design projects using mainly text files as the source documents of the design.  Part of the experiment is to test collaboration online with known as well as anonymous collaborators in order to bootstrap mechanical/aeronautical engineering projects.
+\end{itemize}
+
+It is hoped that this project will encourage other builders to manufacture similar designs and publish their designs, software and 
+data in a similar manner, so as to advance the state of the art of tailless aircraft in particular and engineering in general.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Staged approach}
+
+\begin{itemize}
+\item Firstly a small model (1.5metre wing span, polystyrene) will be built to establish manufacturing techniques.  This step has been completed.
+\item Secondly a larger 2.25m span model from balsa wood will be manufactured with better performance characteristics.  This is the current step.
+\item Lastly larger prototypes have to be designed and built in order to investigate the full scale properties of this type of aircraft.  An intermediate step to the large prototype would be a 27kg all up mass aircraft.  This represents the maximum mass for a legal radio controlled aircraft in South Africa.
+\item A full scale aircraft should have a 12 to 15m wing span.  
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Important notes}
+
+\begin{itemize}
+\item It is imperative that a full scale aircraft 
+be manufactured since subscale tailless aircraft nearly always have satisfactory handling qualities.  Full scale tailless aircraft 
+have to be built in order to investigate the vulnerabilities of tailless aircraft to gusty conditions.
+\item The Prandtl wing aircraft is envisaged to be a remotely piloted vehicle in all stages.  This is a risk reduction strategy since the technology of tailless aircraft has inherent risks as evidenced by the literature on the subject.  Even though this is an open hardware project, it is in no way encouraged that a piloted version of this aircraft be built.
+\end{itemize}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Project information}
+
+The Bloodlesshound project is an open hardware, open software project.  Information about the project can be found on:  
+
+\begin{itemize}
+\item Youtube (search for 'Prandtl Aircraftwing' on google)
+\item Instagram (ludwigprandtlwing)
+\item Mail the project at: Ludwigprandtlwing@gmail.com 
+\item Github (ludwigprandtlwing)
+\end{itemize}
+
+\end{frame}
+
+
+
+
 %------------------------------------------------
 \section{First Section} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
 %------------------------------------------------
@@ -119,38 +208,8 @@ University of California \\ % Your institution for the title page
 \frametitle{Paragraphs of Text}
 Prandtl wing aircraft of the bloodlesshound project:  Second version 2.25metre wing span.
 
-The Prandtl wing is a tailless aircraft.  This aircraft is a research vehicle intended to investigate the bell shaped 
-lift distribution as suggested by Ludwig Prandtl in his 1933 paper on the efficiency of wings with a specific design mass 
-and no span limitation.
 
-The research was inspired by the NASA paper "On Wings of the Minimum Induced Drag: Spanload Implications for Aircraft and Birds," 
-NASA/TP – 2016-219072. (http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20160003578.pdf)
 
-The goals of the project is somewhat different from the NASA paper which focussed on proving the existence of proverse yaw 
-with the Prandtl lift distribution.  The goals are:
-
-1.  Investigate whether or not a tailless aircraft designed to have a Prandtl lift distribution will have satisfactory 
-unaugmented (no control system except for the pilot and direct gearing of the control surfaces) handling qualities.
-2.  Determine the performance characteristics of such an aircraft.  In particular is important to show very favourable
-L/D characteristics (L/D >= 53 for full scale aircraft) and laminar flow on the wing surfaces, even with reflexed profiles 
-that are common on tailless designs.
-
-A staged approach will be followed with the research.  Firstly a small model will be built to establish manufacturing techniques.
-This step has been completed.  Secondly a larger 2.25m span model will be manufactured with better performance characteristics.  This 
-is the current step.  Lastly larger prototypes have to be designed and built in order to investigate the full scale properties of 
-this type of aircraft.  A full scale aircraft should have a 12 to 15m wing span.  It is imperative that a full scale aircraft 
-be manufactured since subscale tailless aircraft nearly always have satisfactory handling qualities.  Full scale tailless aircraft 
-have to be built in order to investigate the vulnerabilities of tailless aircraft to gusty conditions.
-
-This aircraft will be designed and built using free and open source software as far as possible.  Furthermore this design is to have 
-version control using git.  This is in order to investigate git's suitability as product lifecycle management software.  The design 
-will also follow a open hardware philosophy, similar to the open sourced software used to create it.
-
-It is hoped that this project will encourage other builders to manufacture similar designs and publish their designs, software and 
-data in a similar manner, so as to advance the state of the art of tailless aircraft in particular and engineering in general.
-\\~\\
-
-Sed diam enim, sagittis nec condimentum sit amet, ullamcorper sit amet libero. Aliquam vel dui orci, a porta odio. Nullam id suscipit ipsum. Aenean lobortis commodo sem, ut commodo leo gravida vitae. Pellentesque vehicula ante iaculis arcu pretium rutrum eget sit amet purus. Integer ornare nulla quis neque ultrices lobortis. Vestibulum ultrices tincidunt libero, quis commodo erat ullamcorper id.
 \end{frame}
 
 %------------------------------------------------

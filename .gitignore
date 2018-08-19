@@ -1,9 +1,10 @@
 *.aux
+*.log
 *.txt
 *.nav
 *.out
 *.pdf
 *.snm
-*.synctex
+*.synctex.gz
 *.toc
 *.vrb
