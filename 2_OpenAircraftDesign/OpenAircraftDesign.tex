@@ -135,16 +135,128 @@ Pure trade (classical horse trading) immediately negates the losses associated w
 
 \begin{frame}
 \frametitle{Bullet Points}
+
+Many tools are required for designing, analysing and building an aircraft.  The following typical tools are required.  A libre, open source example of each is presented next to the type of software.
+
 \begin{itemize}
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit
-\item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
-\item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
-\item Nam cursus est eget velit posuere pellentesque
-\item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
+\item Computer aided design (CAD) tools - FreeCAD
+\item Finite element analysis - Calculix (bundled with FreeCAD) or Nastran95, Code Aster
+\item Computational fluid dynamics (CFD) - OpenFOAM (also integrated with FreeCAD)
+\item Rigid body dynamic simulation - Project Chrono
+\item General matrix computation, large data processing for flight testing - Python
+\item Version control - Git
+\item Product lifecycle management - Combination of Git and a browser based framework such as Django (not yet developed, but envisaged)
 \end{itemize}
 \end{frame}
 
 %------------------------------------------------
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Philosophy begin FOSS}
+
+Free Open Source Software (FOSS) has some of its roots with the Free Software Foundation that started life at MIT and was responsible for one of the first and certainly one of the longest lasting text environments called emacs.
+
+FOSS does in part democratize software and makes it transparent for everyone to use and edit with very few restrictions.
+
+The implication of libre software is that it enables innovation by lowering the barriers to entry and standardizing methods all across the globe.
+
+This might not seem very important at face value, but it has great consequences that have not been fully realized yet.
+
+The fact that libre software is available at no cost or lag (the time it takes to release software) has the following consequences:
+
+\begin{itemize}
+\item Skilled engineers that previously had little or no access to high end engineering software are now free to innovate
+\item Libre software allows proper scaling to be possible, meaning that the number of engineers that can work on a problem is now only limited by the number of engineers you can find and not by license restrictions
+\item The scaling of the engineering profession will have an exponential effect on innovation
+\item It enables engineers to use complexity to their advantage since these packages enables more and more complex analyses
+\item Libre software provide a way of levelling the playing field with respect to engineering input costs, although it put a premium on skills, since engineers using it usually need more knowledge than the average user of paid software, since there is less technical support.
+\item Software development can happen in parallel on a 24/7 basis with contributors from around the world.  This is facilitated by tools like Git.
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Philosophy begin FOSS}
+
+The scaling effect of libre software is not as immediately apparent as it should be.  Let us explain by means of an analogy.
+Let us examine a common system of metrology such as the metric system or the imperial system.
+Up to 1920's many countries had different definitions of an inch.
+Gauge blocks were invented in 1896 by Swedish machinist Carl Edvard Johansson.
+To a large degree these gauge blocks standardized the industrial inch and also could be used for the metric system.
+
+The gauge blocks made it possible for different machine shops, companies and indeed countries to have standard references of measurement.
+
+This might not seem immediately apparent, but this enables a global scalable manufacturing system.  Lego blocks made in Chech republic fits onto blocks made in the U.S. and not only that, they fit onto blocks made thirty years ago.
+
+You can manufacture more, quicker than ever before at higher quality.
+
+\end{frame}
+
+%------------------------------------------------
+
+
+\begin{frame}
+\frametitle{Philosophy begin FOSS}
+
+What is the relevance of gauge blocks to libre software?
+The answer is that libre software is the gauge blocks of the software industry.
+All engineers in the world have the opportunity to use standard and benchmarked methods that have taken thousands of hours to develop.
+
+They can share their ideas globally and scale on a level that has never been seen before.
+All this without sacrificing flexibility, since standard methods can be forked and custom developed (while possibly later standardizing itself).  All the while the body of tools can grow.
+
+You can analyze and engineer more products, quicker than ever before at higher quality.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Philosophy begin FOSS}
+
+Gauge blocks standardized measurement and brought metrology out into the open.  This meant that specialized knowledge was not limited to companies or in a previous time, guilds.
+
+Similarly libre software brings advanced analysis to any engineer willing to try and use the software.  It is now not limited to companies (in essence macro guilds) with large software budgets.
+
+Standardization increased the gross product of manufacturing immensely over the last century leading to great prosperity for the entities that embraced it.
+
+Libre software has the possiblility of providing just such a platform for innovation to scale exponentially.  Also with the accompanying properity and increase in gross product.
+This will be aided by collaborative platforms such as Github that facilitates the large scale sharing of information, methods and contact between engineers.
+
+Thus facilitating the free movement of ideas, intellectual (and consequently monetary) capital and contact between persons.
+
+\end{frame}
+
+
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Mechanical/Aeronautical Engineering as coding discipline}
+
+The lines are blurring between engineering and software coding.
+
+Engineering a product has become a software excercise.  For example, in FreeCAD a whole component can be constructed using python commands.  The versions of the CAD document can be controlled by Git, since the script file is a text file.
+The analysis can fully be performed in a text python file.  Or the finite element analysis can be scripted using a text file.
+The results from the FEA run produces large amounts of data, that is once again manipulated by using software tools.
+
+Engineering has become inseparable from software development.
+
+As such it is important to adopt software methodologies in order to manage engineering projects, such as agile project management.  And to adopt the fail early, fail often, fail safe approach.
+
+This has been shown to most degrees to be successful at SpaceX and Tesla.
+
+
+\end{frame}
+
+%------------------------------------------------
+
 
 \begin{frame}
 \frametitle{Blocks of Highlighted Text}
@@ -229,10 +341,10 @@ $E = mc^2$
 
 \begin{frame}
 \frametitle{Figure}
-Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
-%\begin{figure}
-%\includegraphics[width=0.8\linewidth]{test}
-%\end{figure}
+Metric gauge blocks from Wikipedia.
+\begin{figure}
+\includegraphics[width=0.8\linewidth]{GaugeBlockMetricSet.jpg}
+\end{figure}
 \end{frame}
 
 %------------------------------------------------

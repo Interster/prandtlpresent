@@ -1,0 +1,8 @@
+
+For a once-off run just use pdflatex:
+
+pdflatex PrandtlWing.tex
+
+In order to repeatedly run latex use the latexmk package:
+
+latexmk -pdf -pv PrandtlWing.tex
