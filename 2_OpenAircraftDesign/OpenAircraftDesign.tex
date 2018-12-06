@@ -78,6 +78,7 @@
 
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{verbatim}
 
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
@@ -127,15 +128,19 @@ Find out more at the following accounts:
 
 %------------------------------------------------
 
-
-%------------------------------------------------
-\section{First Section} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
-%------------------------------------------------
-
-\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
-
 \begin{frame}
-\frametitle{Paragraphs of Text}
+\frametitle{Introduction}
+
+This is the introduction
+
+Working with the Prandtl wing has highlighted the need for new ways of developing an aircraft.
+This is made possible by broad changes as a result of mainly internet connectivity and the free software movements.
+
+
+\end{frame}
+
+
+\begin{comment}
 Aircraft design requires specialist knowledge and skills.  Furthermore large capital investment is required, often with little guarantee of return on investment and often at low margins.  Things have changed though, with remotely piloted vehicles that can reduce risk, open source software, first person view, collaboration tools (GIT). \\~\\
 
 Doing what hobbyists have been doing for years, exchanging components and expertise, but over the internet that facilitates the scaling of the design and analysis process.
@@ -150,8 +155,37 @@ Enable trade of skills and equipment in an open way.
 
 This removes the hysteresis (marketing department, sales, HR) associated with companies with large overheads.  Projects can easily spend money but bringing money in is difficult.
 Pure trade (classical horse trading) immediately negates the losses associated with the existing system.
+\end{comment}
 
+
+
+
+%------------------------------------------------
+\section{Requirements for networked innovation} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+
+
+\begin{frame}
+\frametitle{Requirements for networked innovation}
+
+The following seems to be necessary for this kind of innovation/product development
+
+\begin{itemize}
+\item Connectivity - internet
+\item A local, enthusiastic group of individuals that can share and brainstorm ideas % This seems to be a prerequisite otherwise projects quickly loose momentum.  Typically this requires people in very close proximity such as an office or a small community, otherwise easy access in a city.
+\item A broader community of individuals willing to contribute
+\item An innovation framework - Guidelines on how the project is conducted:  Typically a document describing the methodologies used
+\item A set of Free Open Soure Software (FOSS) tools
+\item No restrictions on information - therefore open hardware and NO PATENTS
+\end{itemize}
 \end{frame}
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+
+
 
 %------------------------------------------------
 
@@ -206,6 +240,12 @@ The fact that libre software is available at no cost or lag (the time it takes t
 \begin{frame}
 \frametitle{Philosophy begin FOSS}
 
+
+
+\end{frame}
+
+\begin{comment}
+
 The scaling effect of libre software is not as immediately apparent as it should be.  Let us explain by means of an analogy.
 Let us examine a common system of metrology such as the metric system or the imperial system.
 Up to 1920's many countries had different definitions of an inch.
@@ -218,7 +258,9 @@ This might not seem immediately apparent, but this enables a global scalable man
 
 You can manufacture more, quicker than ever before at higher quality.
 
-\end{frame}
+\end{comment}
+
+
 
 %------------------------------------------------
 
@@ -226,6 +268,11 @@ You can manufacture more, quicker than ever before at higher quality.
 \begin{frame}
 \frametitle{Philosophy begin FOSS}
 
+
+
+\end{frame}
+
+\begin{comment}
 What is the relevance of gauge blocks to libre software?
 The answer is that libre software is the gauge blocks of the software industry.
 All engineers in the world have the opportunity to use standard and benchmarked methods that have taken thousands of hours to develop.
@@ -234,14 +281,20 @@ They can share their ideas globally and scale on a level that has never been see
 All this without sacrificing flexibility, since standard methods can be forked and custom developed (while possibly later standardizing itself).  All the while the body of tools can grow.
 
 You can analyze and engineer more products, quicker than ever before at higher quality.
+\end{comment}
 
-\end{frame}
 
 
 
 \begin{frame}
 \frametitle{Philosophy begin FOSS}
 
+
+
+\end{frame}
+
+
+\begin{comment}
 Gauge blocks standardized measurement and brought metrology out into the open.  This meant that specialized knowledge was not limited to companies or in a previous time, guilds.
 
 Similarly libre software brings advanced analysis to any engineer willing to try and use the software.  It is now not limited to companies (in essence macro guilds) with large software budgets.
@@ -252,8 +305,8 @@ Libre software has the possiblility of providing just such a platform for innova
 This will be aided by collaborative platforms such as Github that facilitates the large scale sharing of information, methods and contact between engineers.
 
 Thus facilitating the free movement of ideas, intellectual (and consequently monetary) capital and contact between persons.
+\end{comment}
 
-\end{frame}
 
 
 
@@ -262,6 +315,13 @@ Thus facilitating the free movement of ideas, intellectual (and consequently mon
 \begin{frame}
 \frametitle{Mechanical/Aeronautical Engineering as coding discipline}
 
+The lines are blurring between engineering and software coding.
+
+
+\end{frame}
+
+
+\begin{comment}
 The lines are blurring between engineering and software coding.
 
 Engineering a product has become a software excercise.  For example, in FreeCAD a whole component can be constructed using python commands.  The versions of the CAD document can be controlled by Git, since the script file is a text file.
@@ -273,9 +333,10 @@ Engineering has become inseparable from software development.
 As such it is important to adopt software methodologies in order to manage engineering projects, such as agile project management.  And to adopt the fail early, fail often, fail safe approach.
 
 This has been shown to most degrees to be successful at SpaceX and Tesla.
+\end{comment}
 
 
-\end{frame}
+
 
 %------------------------------------------------
 
@@ -284,6 +345,11 @@ This has been shown to most degrees to be successful at SpaceX and Tesla.
 \begin{frame}
 \frametitle{Evolutionary aspects of innovation}
 
+Evolutionary aspects and developmental aspects of software
+\end{frame}
+
+
+\begin{comment}
 Verspreiding van sagteware
 Kommersiële sagteware gestop deur koste en lisensies maar gehelp deur vriendelikheid en aggressiewe bemarking
 
@@ -299,7 +365,10 @@ Die nodigheid van 'n raamwerk kan nie onderskat word nie. Dit is wat platforms s
 
 Die belangrikheid van desentraliseerde organisasie moet hier onderstreep word. Dit is hardnekkig en iets anders as die hedendaagse sentralisasie wat heel moontlik nou 'n plato bereik het. Desentraliseerde organisasie was nooit werklik moontlik nie voor die konnektiwiteit wat nou beskikbaar is. 'n Platform soos tipies op 'n web implementasie maak dit moontlik. Soos bv 'n blockchain van kragopwekkking.
 
-\end{frame}
+\end{comment}
+
+
+
 
 %------------------------------------------------
 
@@ -308,6 +377,11 @@ Die belangrikheid van desentraliseerde organisasie moet hier onderstreep word. D
 \begin{frame}
 \frametitle{Examples of evolutionary restrictions for engineering}
 
+Explain how tailless aircraft evolve
+
+\end{frame}
+
+\begin{comment}
 Tailless aircraft have lagged significantly behind aircraft with a horizontal tail.  This is so severe that it is estimated that 10 times more development is now required to field a competitive tailless design when compared with a tailed design.
 
 Much of the the performance of the tailless concept rests on the performance of the often reflexed airfoil of the aircraft.  In order to be competitive tailless aircraft also require laminar airfoils such as their tailed competitors.  But reflexed laminar profiles are extremely difficult to develop.  
@@ -320,7 +394,8 @@ The diversion of capital resources to software further restricts the number of e
 This is a specific example for airfoils but this kind of restriction would be a similar barrier to all innovation.  
 Furthermore the establishment of a license structure leads to a silo approach to product design, where certain departments keep the analysis tools in neat silos and preventing the innovation enabling tools to spread to other parts of an organization or innovatory clan.
 
-\end{frame}
+\end{comment}
+
 
 %------------------------------------------------
 
