@@ -1,38 +1,70 @@
 \documentclass{report}
 \usepackage{graphicx}
-
+\usepackage[numbers]{natbib}
 \begin{document}
 
-\title{Prandtl wing development specification}
+\title{The Prandtl Investigation Development Specification}
 \author{Ni\"el Agenbag}
 
 \maketitle
 
 \begin{abstract}
-The Prandtl wing development specification.
+The Prandtl investigation has the goal of determining whether or not it is possible to build a high performance tailless glider with good handling qualities using the Prandtl spanwise circulation distribution as opposed to an elliptical spanwise circulation distrubtion, but without the addtional assistance of stability augmentation systems.  In this context high performance relates to the glider performance required for a world championship winning glider.  This is the development specification.
 \end{abstract}
 
 
 \chapter{Development framework}
 
 \section{Introduction}
-This is the development specifcation for the Prandtl aircraft.
+
+This is the development specifcation for the Prandtl investigation.  The Prandtl investigation has the goal of determining whether or not it is possible to build a high performance tailless glider with good handling qualities using the Prandtl spanwise circulation distribution as opposed to an elliptical spanwise circulation distrubtion, but without the addtional assistance of stability augmentation systems.  In this context high performance relates to the glider performance required for a world championship winning glider.
+
+The description of the Prandtl lift distribution as applied to tailless aircraft is presented in \cite{PrandtlBowers}.  The inspiration for the Prandtl investigation came from the organizers of the Prandtl investigation listening to the podcast in \cite{omegataupodcastPrandtl}.
+
+Ludwig Prandtl postulated that the optimal circulation distribution for a given span was elliptical as shown in \cite{Prandtl1921}.  Later he reformulated the problem and derived the optimal spanwise circulation distribution for a given air vehicle mass (\cite{Prandtl1933}).  This bell-shaped circulation distribution potentially has lower drag compared to the elliptical distribution as well as better handling qualities when applied to a tailless aircraft.
+
+This investigation will attempt to determine whether the Prandtl spanwise circulation distribution has satisfactory performance and handling quality criteria as applied to a tailless aircraft configuration.
+
+\section{Prandtl wing philosophy}
+
+It is assumed that the parasitic drag or $C_{D0}$ is kept low for a tailless concept because the absence of the empennage reduces drag compared to a an aircraft that has vertical and horizontal control and stability surfaces.
+
+The Prandtl wing has some additional advantages above the low drag of the tailless concept that uses the elliptical circulation distribution.  The following information is from \cite{omegataupodcastPrandtl}.
+
+The Prandtl lift distribution is the circulation distribution that has the minimum induced drag for a specific amount of structure or mass.  It has 11\% less drag and 22\% more span compared to an elliptical circulation distribution.  The slope at the centre span and at the tip is zero for the Prandtl distribution.  The downwash for the Prandtl distribution is not uniform or constant as is the case with the elliptical distribution.  There is upwash at the tip of the wing for the Prandtl distribution.
+
+Adverse yaw is kept in check with Prandtl distribution.  There is induced thrust at the tip of the wing during a control surface deflection.  This causes proverse yaw and helps the aircraft execute automatically coordinated turns.  Only a small contribution to lift comes from the span at the at the control surfaces and therefore there is no loss in lift as a resut of control deflections.  With an elliptical lift distribution there is a major disturbance of the circulation distribution during control surface deflection, resulting in inefficiencies.  This will hopefully not be the case for the Prandtl distribution.  The control surfaces must be in the last 30\% of span in order for the Prandtl distribution not to be affected by control surface deflection.
+
+The position where the downwash changes to upwash is a function of sweep angle.  Therefore if the aircraft is yawing this position changes spanwise.  This causes artificial yaw damping and consequently a tailless aircraft with a Prandtl distribution does not have dutch roll problems or lack of yaw stiffness.
+
+The Prandtl circulation distribution is achieved with taper, airfoils varying spanwise and twist varying spanwise in a non-linear fashion.
 
 
 \section{Airfoil}
 
 Develop a set of reflexed airfoils with zero moment coefficient that is laminar.
 
+This is a challenge because aerodynamic moment is difficult to calculate accurately by means of potential flow methods.  This is compounded by the fact the moment coefficient should be close to zero.  Therefore a small error can lead to large percentage errors in moment coefficient.
+
+Furthermore laminar reflex profiles are difficult to develop.  Reflex profiles, like profiles that have a flap or control surface extended tend to lead to turbulent flow and hence keeping the flow laminar is technically difficult.
+
 \section{Spanwise optimization}
 
 
-The spanwise airfoil shape as well as the lift distribution and twist has to be optimized in order to yield the bell shaped lift distribution.
+The spanwise airfoil shape as well as the lift distribution and twist has to be optimized in order to yield the bell shaped lift distribution.  This involves developing a lifting line method with which inverse wing design can be performed.  This involves implementing the constraints from \cite{Prandtl1933}, together with the principles in \cite{PrandtlBowers}.
 
 \section{Mass budget}
 
 The mass of the Prandtl wing is the primary driver for the optimization.  The mass is constant for battery aircraft therefore this technology is most suited.  Since the mass is the design optimization points.
 
+\section{Performance model}
 
+It is required to have a performance prediction model for the Prandtl wing aircraft.  This takes as input the mass of the aircraft and predicts range and loiter time for the aircraft.
+
+
+\section{Structural model}
+
+It is envisaged that the Prandtl type aircraft will have significant problems with aeroelasticity.  A bending moment and shear force diagram for the span is required.  Also a mass distribution with respect to span is required.  This must be used to obtain wing natural frequency and bending modes.
 
 
 \section{Different versions of the aircraft}
@@ -41,5 +73,14 @@ Prandtl 1 to 5 to show different stages of development.
 
 \section{Conclusion}
 This development specification should be consulted and used as a framework for the development for the Prandtl wing aircraft
+
+
+\begin{thebibliography}{99}
+\bibitem{PrandtlBowers} Albion H. Bowers, and Oscar J. Murillo (2016) On Wings of the Minimum Induced Drag:  Spanload Implications for Aircraft and Birds, NASA/TP-2016-219072
+\bibitem{omegataupodcastPrandtl} Markus Voelter (2017) omega tau podcast number 256 – Flight Research at NASA Armstrong, Part 1: Subscale, http://omegataupodcast.net/256-flight-research-at-nasa-armstrong-part-1-subscale/
+\bibitem{Prandtl1921} Prandtl, L.  (1921)  Applications  of  modern hydrodynamics  to  aeronautics,  NACA  Report  No  116 (Washington, DC).
+\bibitem{Prandtl1933} Prandtl L (1933) Über tragfl\"ugel kleinsten induzierten widerstandes. Zeitschrift für Flugtecknik und Motorluftschiffahrt, 1 VI 1933 (M\"unchen, Deustchland).
+\end{thebibliography}
+
 
 \end{document}
