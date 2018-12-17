@@ -35,9 +35,23 @@ The Prandtl lift distribution is the circulation distribution that has the minim
 
 Adverse yaw is kept in check with Prandtl distribution.  There is induced thrust at the tip of the wing during a control surface deflection.  This causes proverse yaw and helps the aircraft execute automatically coordinated turns.  Only a small contribution to lift comes from the span at the at the control surfaces and therefore there is no loss in lift as a resut of control deflections.  With an elliptical lift distribution there is a major disturbance of the circulation distribution during control surface deflection, resulting in inefficiencies.  This will hopefully not be the case for the Prandtl distribution.  The control surfaces must be in the last 30\% of span in order for the Prandtl distribution not to be affected by control surface deflection.
 
+No additional drag is present for turn coordination from a rudder control surface because turns are already coordinated. This implies more efficient turn performance which is important for competition gliding.
+
 The position where the downwash changes to upwash is a function of sweep angle.  Therefore if the aircraft is yawing this position changes spanwise.  This causes artificial yaw damping and consequently a tailless aircraft with a Prandtl distribution does not have dutch roll problems or lack of yaw stiffness.
 
+The $C_{D0}$ value is further reduced because a Prandtl style wing is claimed (\cite{PrandtlPatent}) to have less wetted area compared to a wing design with an elliptical circulation distribution thas has the same lift capacity.
+
 The Prandtl circulation distribution is achieved with taper, airfoils varying spanwise and twist varying spanwise in a non-linear fashion.
+
+
+\subsection{A note on trim}
+
+
+The aft fuselage shape can be used for trim.  Alternatively wing sweep may be used as trim, but since this implies heavy and crack prone hinges this approach is not favoured.
+
+Large sea birds don't have tails hence messy landings.  They don't need it because they seldom land.
+
+Evolution leads to a tail empennage structure disappearing as part of the engineering design iterations.  If you design an aircraft with a Prandtl circulation distribution and a horizontal tail surface on an empennage which also includes a rudder, you soon abandon the rudder, because it is never used.  The tail pitch moment is so small that the tailboom is much reduced until it morphs into the fuselage, or completely disappears.
 
 
 \section{Goals}
@@ -483,6 +497,19 @@ It is required to have a performance prediction model for the Prandtl wing aircr
 
 It is envisaged that the Prandtl type aircraft will have significant problems with aeroelasticity.  A bending moment and shear force diagram for the span is required.  Also a mass distribution with respect to span is required.  This must be used to obtain wing natural frequency and bending modes.
 
+Need a structural bending moment model to show that 20\% more span does not have higher bending moment. 
+
+Also an aeroelastic model to prove that it does not resonate to destruction.  It is important to have a simple analytical model to show the dynamic effect of torque due to sweep and of gust loads on bending moment.  It is important to show that the natural frequency of the wing is outside that of the gust spectrum excitation frequency and to tailor the wing design to respect this constraint.
+
+
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width = 0.7\textwidth]{Pictures/structVibModel.pdf}
+	\end{center}
+
+	\caption{Aeroelastic analytical model of Prantl wing.}
+	\label{fig: structVibModel}
+\end{figure}
 
 \section{Different versions of the aircraft}
 
@@ -494,6 +521,7 @@ This development specification should be consulted and used as a framework for t
 
 \begin{thebibliography}{99}
 \bibitem{PrandtlBowers} Albion H. Bowers, and Oscar J. Murillo (2016) On Wings of the Minimum Induced Drag:  Spanload Implications for Aircraft and Birds, NASA/TP-2016-219072
+\bibitem{PrandtlPatent} US Patent 9,382,000 B1, July 5, 2016, Bowers et al.
 \bibitem{omegataupodcastPrandtl} Markus Voelter (2017) omega tau podcast number 256 – Flight Research at NASA Armstrong, Part 1: Subscale, http://omegataupodcast.net/256-flight-research-at-nasa-armstrong-part-1-subscale/
 \bibitem{Prandtl1921} Prandtl, L.  (1921)  Applications  of  modern hydrodynamics  to  aeronautics,  NACA  Report  No  116 (Washington, DC).
 \bibitem{Prandtl1933} Prandtl L (1933) Über tragfl\"ugel kleinsten induzierten widerstandes. Zeitschrift für Flugtecknik und Motorluftschiffahrt, 1 VI 1933 (M\"unchen, Deustchland).

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="structVibModel.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="530.97581"
+     inkscape:cy="860.6581"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1024"
+     inkscape:window-height="719"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 16.630952,45.645831 40.443451,140.51785 H 54.806548 L 40.065475,45.267856 Z"
+       id="path3713"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 92.604166,45.267856 -0.377976,7.9375 c 0,0 10.20536,2.267857 8.69345,2.267857 -1.511902,0 -14.363093,0.377976 -14.363093,0.377976 0,0 16.630953,3.023809 15.119043,3.023809 -1.5119,0 -15.119043,1.13393 -15.119043,1.13393 l 13.607143,3.401785 H 85.800593 l 9.449406,3.779763 -0.377976,11.339285 -6.803572,1.133928 11.717263,0.377975 c 0,0 -17.386906,4.15774 -15.119048,4.15774 2.267857,0 19.276784,1.511905 19.276784,1.511905 0,0 -27.214284,1.889879 -21.166666,1.889879 6.047621,0 22.678576,1.889882 22.678576,1.889882 0,0 -21.16667,3.779761 -19.276789,3.779761 1.88988,0 15.119049,0 15.119049,0 l -7.937503,3.023812 v 13.985117 l 10.583333,2.64583 -17.008927,1.88989 17.386907,-0.75596 -19.654764,3.02381 c 0,0 24.946424,7.55952 21.544644,6.4256 -3.40179,-1.13393 -18.898811,1.5119 -18.898811,1.5119 l 12.095239,3.40179 -10.205357,0.37797 7.181545,1.13393 v 10.58333"
+       id="path3715"
+       inkscape:connector-curvature="0" />
+    <rect
+       id="rect3717"
+       width="17.764881"
+       height="10.961308"
+       x="83.154762"
+       y="35.0625"
+       style="stroke-width:0.26458332" />
+    <rect
+       id="rect3717-3"
+       width="7.1815476"
+       height="7.1815457"
+       x="88.068451"
+       y="67.190475"
+       style="stroke-width:0.13616583" />
+    <rect
+       id="rect3717-3-7"
+       width="7.1815476"
+       height="7.1815457"
+       x="86.178566"
+       y="96.29464"
+       style="stroke-width:0.13616583" />
+    <rect
+       id="rect3717-3-5"
+       width="7.1815476"
+       height="7.1815457"
+       x="89.202377"
+       y="133.3363"
+       style="stroke-width:0.13616583" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="109.23512"
+       y="35.818451"
+       id="text3772"><tspan
+         sodipodi:role="line"
+         id="tspan3770"
+         x="109.23512"
+         y="35.818451"
+         style="stroke-width:0.26458332;font-size:3.52777778px">Cockpit mass</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="101.57101"
+       y="71.565498"
+       id="text3772-3"><tspan
+         sodipodi:role="line"
+         id="tspan3770-5"
+         x="101.57101"
+         y="71.565498"
+         style="font-size:3.52777767px;stroke-width:0.26458332">Wing mass 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="101.57224"
+       y="101.3965"
+       id="text3772-3-2"><tspan
+         sodipodi:role="line"
+         id="tspan3770-5-7"
+         x="101.57224"
+         y="101.3965"
+         style="font-size:3.52777767px;stroke-width:0.26458332">Wing mass 2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="97.563187"
+       y="137.8788"
+       id="text3772-3-0"><tspan
+         sodipodi:role="line"
+         id="tspan3770-5-9"
+         x="97.563187"
+         y="137.8788"
+         style="font-size:3.52777767px;stroke-width:0.26458332">Wing mass 3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:0.5;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="134.71365"
+       y="63.711498"
+       id="text3772-3-3"><tspan
+         sodipodi:role="line"
+         id="tspan3770-5-6"
+         x="134.71365"
+         y="63.711498"
+         style="font-size:3.52777767px;line-height:0.5;stroke-width:0.26458332">Have both a translational </tspan><tspan
+         sodipodi:role="line"
+         x="134.71365"
+         y="69.072067"
+         style="font-size:3.52777767px;line-height:0.5;stroke-width:0.26458332"
+         id="tspan3844">in the vertical and a torsional </tspan><tspan
+         sodipodi:role="line"
+         x="134.71365"
+         y="74.432632"
+         style="font-size:3.52777767px;line-height:0.5;stroke-width:0.26458332"
+         id="tspan3846">modelthat are coupled</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:0.5;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="132.99521"
+       y="92.474281"
+       id="text3772-3-3-0"><tspan
+         sodipodi:role="line"
+         x="132.99521"
+         y="92.474281"
+         style="font-size:3.52777767px;line-height:0.5;stroke-width:0.26458332"
+         id="tspan3846-6">Loading is the alpha input </tspan><tspan
+         sodipodi:role="line"
+         x="132.99521"
+         y="97.834846"
+         style="font-size:3.52777767px;line-height:0.5;stroke-width:0.26458332"
+         id="tspan3877">that results in changes in loading</tspan></text>
+  </g>
+</svg>
