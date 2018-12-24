@@ -83,7 +83,7 @@
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 
-\title[Bloodlesshound]{The Bloodlesshound Prandtl Wing Project} % The short title appears at the bottom of every slide, the full title is only on the title page
+\title[Prandtl Investigation]{The Prandtl Lift Distribution Investigation} % The short title appears at the bottom of every slide, the full title is only on the title page
 
 \author{Niel Agenbag} % Your name
 \institute[Unaffiliated] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
@@ -109,27 +109,72 @@ Unaffiliated \\ % Your institution for the title page
 %	PRESENTATION SLIDES
 %----------------------------------------------------------------------------------------
 
-\section{Introduction and Project Goals}
+\section{Introduction and Goals}
 
 \begin{frame}
 \frametitle{Introduction}
 \begin{itemize}
-\item Bloodlesshound Prandtl wing is an independent fork of a NASA Prandtl wing project
+\item An alternative to the elliptical lift distribution exists from Prandtl's work in 1933 \cite{Prandtl1933} and should be investigated 
+\item It has applications in tailless aircraft design and should be investigated
+\item Aircraft development is time consuming and expensive and way has to be found to make possible investigation of the Prandtl lift distribution
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Introduction}
+\begin{itemize}
+\item This presentation will suggest an open source hardware and analysis framework for such an investigation 
+\item Firstly the Prandtl lift distribution will be discussed
+\item Existing work will be presented
+\item The work on a small glider will be presented
+\item Steps for future work will be suggested
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Disclaimer}
+
+\begin{itemize}
+\item The author is not an aerodynamicist - if there are errors it needs to be treated with understanding.
+\item This is investigation a hobby project of the author and associates - it is not a full time occupation.  
+\item The investigation seeks to answer questions such as `How can engineering be done in new ways' and `How can aircraft be more efficient'
+\item As such the investigation is not an end in itself.
+\end{itemize}
+
+\end{frame}
+
+
+
+
+\section{Prandtl's 1933 lift distribution}
+
+
+\section{Existing work}
+
+
+\begin{frame}
+\frametitle{Background}
+\begin{itemize}
+\item NASA project initiated by Al Bowers
 \item See more about it at https://www.nasa.gov/centers/armstrong/news/FactSheets/FS-106-AFRC.html
 \item A technical paper (“On Wings of the Minimum Induced Drag: Spanload Implications for Aircraft and Birds,” NASA/TP – 2016-219072) on the research has been published
 https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20160003578.pdf
-\item The Bloodlesshound project used this paper as a baseline for further work
+\item A patent was obtained to prevent exclusive use by individuals or companies of the concept
 \end{itemize}
 \end{frame}
 
 
 
-\begin{frame}
-\frametitle{Introduction Bloodlesshound}
 
-The Prandtl wing is a tailless aircraft concept.  This aircraft is a research vehicle intended to investigate the bell shaped 
-lift distribution as suggested by Ludwig Prandtl in his 1933 paper on the efficiency of wings with a specific design mass 
-and no span limitation.
+\section{The Prandtl Investigation}
+
+\begin{frame}
+\frametitle{The Prandtl Investigation}
+
+The Prandtl investigation is an independent fork of a NASA Prandtl wing project.
+
+The investigation will use a tailless aircraft concept to investigate the Prandtl lift distribution.  This aircraft is a research vehicle intended to investigate the bell shaped lift distribution as suggested by Ludwig Prandtl in his 1933 paper on the efficiency of wings with a specific design mass and no span limitation.
 
 The goals of the project are somewhat different from the NASA paper.  The paper focussed on proving the existence of proverse yaw with the Prandtl lift distribution as well as postulating that birds most likely utilize the Prandtl circulation distribution as opposed to the elliptical circulation distribution.  
 
@@ -138,7 +183,7 @@ The goals of the project are somewhat different from the NASA paper.  The paper 
 
 
 \begin{frame}
-\frametitle{Project Goals}
+\frametitle{The Prandtl Investigation Goals}
 
 The goals are:
 
@@ -153,8 +198,37 @@ data in a similar manner, so as to advance the state of the art of tailless airc
 
 \end{frame}
 
+
+\section{Prandtl glider built}
+
+\subsection{Calculations} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+
+\subsection{Flight tests}
+
+\subsection{Conclusions from glider}
+
 \begin{frame}
-\frametitle{Staged approach}
+\frametitle{Conclusions from glider}
+
+\begin{itemize}
+\item The aircraft was stable
+\item Observations indicate that proverse yaw might have been achieved
+\item Glide performance was poor, but is attributed to incorrect trim speed and rough finish of polystyrene wing
+\item The CNC manufacturing concept was proven
+\item The glider results are sufficient encouraging to continue investigation
+\end{itemize}
+
+\end{frame}
+
+
+
+
+
+\section{Future work}
+
+
+\begin{frame}
+\frametitle{Suggested staged approach}
 
 \begin{itemize}
 \item Firstly a small model (1.5metre wing span, polystyrene) will be built to establish manufacturing techniques.  This step has been completed.
@@ -193,7 +267,7 @@ have to be built in order to investigate the vulnerabilities of tailless aircraf
 The Bloodlesshound project is an open hardware, open software project.  Information about the project can be found on:  
 
 \begin{itemize}
-\item Youtube (search for 'Prandtl Aircraftwing' on google)
+\item Youtube (search for ``Prandtl Aircraftwing'' on google)
 \item Instagram (ludwigprandtlwing)
 \item Mail the project at: Ludwigprandtlwing@gmail.com 
 \item Github (ludwigprandtlwing)
@@ -204,11 +278,7 @@ The Bloodlesshound project is an open hardware, open software project.  Informat
 
 
 
-%------------------------------------------------
-\section{First Section} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
-%------------------------------------------------
 
-\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 
 \begin{frame}
 \frametitle{Paragraphs of Text}
@@ -218,118 +288,21 @@ Prandtl wing aircraft of the bloodlesshound project:  Second version 2.25metre w
 
 \end{frame}
 
-%------------------------------------------------
 
 \begin{frame}
-\frametitle{Bullet Points}
+\frametitle{Project information}
+
+The Prandtl investigation is an open hardware, open software project.  As such:  
+
 \begin{itemize}
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit
-\item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
-\item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
-\item Nam cursus est eget velit posuere pellentesque
-\item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
+\item You are encouraged to use all the information for your own project
+\item The information should be shared as widely as possible with whomever is interested
+\item You are invited to participate with us if you are interested
+\item If you are so inclined, share your own work on this topic with us and all others
 \end{itemize}
+
 \end{frame}
 
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Blocks of Highlighted Text}
-\begin{block}{Block 1}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-\end{block}
-
-\begin{block}{Block 2}
-Pellentesque sed tellus purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum quis magna at risus dictum tempor eu vitae velit.
-\end{block}
-
-\begin{block}{Block 3}
-Suspendisse tincidunt sagittis gravida. Curabitur condimentum, enim sed venenatis rutrum, ipsum neque consectetur orci, sed blandit justo nisi ac lacus.
-\end{block}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Multiple Columns}
-\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-
-\column{.45\textwidth} % Left column and width
-\textbf{Heading}
-\begin{enumerate}
-\item Statement
-\item Explanation
-\item Example
-\end{enumerate}
-
-\column{.5\textwidth} % Right column and width
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-
-\end{columns}
-\end{frame}
-
-%------------------------------------------------
-\section{Second Section}
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Table}
-\begin{table}
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\caption{Table caption}
-\end{table}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Verbatim}
-\begin{example}[Theorem Slide Code]
-\begin{verbatim}
-\begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
-\end{frame}\end{verbatim}
-\end{example}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Figure}
-Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
-%\begin{figure}
-%\includegraphics[width=0.8\linewidth]{test}
-%\end{figure}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Citation}
-An example of the \verb|\cite| command to cite within the presentation:\\~
-
-This statement requires citation \cite{p1}.
-\end{frame}
 
 %------------------------------------------------
 
@@ -337,9 +310,15 @@ This statement requires citation \cite{p1}.
 \frametitle{References}
 \footnotesize{
 \begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
-\bibitem[Smith, 2012]{p1} John Smith (2012)
-\newblock Title of the publication
-\newblock \emph{Journal Name} 12(3), 45 -- 678.
+
+\bibitem{PrandtlBowers} Albion H. Bowers, and Oscar J. Murillo (2016) On Wings of the Minimum Induced Drag:  Spanload Implications for Aircraft and Birds, NASA/TP-2016-219072
+\bibitem{PrandtlPatent} US Patent 9,382,000 B1, July 5, 2016, Bowers et al.
+\bibitem{omegataupodcastPrandtl} Markus Voelter (2017) omega tau podcast number 256 – Flight Research at NASA Armstrong, Part 1: Subscale, http://omegataupodcast.net/256-flight-research-at-nasa-armstrong-part-1-subscale/
+\bibitem{Prandtl1921} Prandtl, L.  (1921)  Applications  of  modern hydrodynamics  to  aeronautics,  NACA  Report  No  116 (Washington, DC).
+\bibitem{Prandtl1933} Prandtl L (1933) Über tragfl\"ugel kleinsten induzierten widerstandes. Zeitschrift für Flugtecknik und Motorluftschiffahrt, 1 VI 1933 (M\"unchen, Deustchland).
+
+
+
 \end{thebibliography}
 }
 \end{frame}
