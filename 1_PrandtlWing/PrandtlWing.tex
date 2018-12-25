@@ -115,6 +115,7 @@ Unaffiliated \\ % Your institution for the title page
 \frametitle{Introduction}
 \begin{itemize}
 \item An alternative to the elliptical lift distribution exists from Prandtl's work in 1933 \cite{Prandtl1933} and should be investigated 
+\item The Prandtl lift distribution could potentially lead to 11\% less induced drag for the same amount of structure compared to the elliptical lift distribution
 \item It has applications in tailless aircraft design and should be investigated
 \item Aircraft development is time consuming and expensive and way has to be found to make possible investigation of the Prandtl lift distribution
 \end{itemize}
@@ -145,16 +146,50 @@ Unaffiliated \\ % Your institution for the title page
 \end{frame}
 
 
+\begin{frame}
+\frametitle{Disclaimer}
+
+We do not pretend to know the answer.
+
+\includegraphics[width = 0.5\textwidth]{Pictures/NoIdea.JPG}
+
+\end{frame}
 
 
 \section{Prandtl's 1933 lift distribution}
+
+\begin{frame}
+\frametitle{The Prandtl lift distribution}
+\begin{itemize}
+\item Developed following the elliptical lift distribution
+\item Leads to 11\% less induced drag for 22\% more span, but the same root bending moment
+\end{itemize}
+
+
+Show graph of the elliptical and Prandtl on the same picture.
+
+Show the non-constant downwash and the upwash at the tips.
+
+Quick rundown of theory from the NASA paper
+
+
+List all the potential gains from this distribution (Less area parasitic, no yaw control necessary because no adverse yaw, leading to less drag, better handling qualities for tailless aircraft)
+
+Show the equation of the CL local from the patent.
+
+Talk about the negatives:  Must still prove all these claims and this will cost money.
+Nickel and Wohlfahrt specifically devote a paragraph stating that this lift distribution is not worth it.  These are risks.
+Larger span means that it would find limited application in commercial aviation due to existing infrastructure.
+
+
+\end{frame}
 
 
 \section{Existing work}
 
 
 \begin{frame}
-\frametitle{Background}
+\frametitle{Existing work}
 \begin{itemize}
 \item NASA project initiated by Al Bowers
 \item See more about it at https://www.nasa.gov/centers/armstrong/news/FactSheets/FS-106-AFRC.html
@@ -165,6 +200,23 @@ https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20160003578.pdf
 \end{frame}
 
 
+\begin{frame}
+\frametitle{Existing work}
+
+The Prandtl D aircraft
+
+\includegraphics[width = 0.8\textwidth]{Pictures/PrandtlDflight.jpg}
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Existing work}
+\begin{itemize}
+\item The Prandtl D has proven that the Prandtl lift distribution has proverse yaw.
+\end{itemize}
+\end{frame}
 
 
 \section{The Prandtl Investigation}
@@ -172,11 +224,23 @@ https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20160003578.pdf
 \begin{frame}
 \frametitle{The Prandtl Investigation}
 
-The Prandtl investigation is an independent fork of a NASA Prandtl wing project.
+\begin{itemize}
+\item The Prandtl investigation is an independent fork of a NASA Prandtl wing project.
+\item The investigation will use a tailless aircraft concept to investigate the Prandtl lift distribution.  This aircraft is a research vehicle intended to investigate the bell shaped lift distribution as suggested by Ludwig Prandtl in his 1933 paper on the efficiency of wings with a specific design mass and no span limitation.
+\end{itemize}
 
-The investigation will use a tailless aircraft concept to investigate the Prandtl lift distribution.  This aircraft is a research vehicle intended to investigate the bell shaped lift distribution as suggested by Ludwig Prandtl in his 1933 paper on the efficiency of wings with a specific design mass and no span limitation.
+\end{frame}
 
-The goals of the project are somewhat different from the NASA paper.  The paper focussed on proving the existence of proverse yaw with the Prandtl lift distribution as well as postulating that birds most likely utilize the Prandtl circulation distribution as opposed to the elliptical circulation distribution.  
+
+\begin{frame}
+\frametitle{The Prandtl Investigation}
+
+The goals of the project are somewhat different from the NASA paper.  
+
+\begin{itemize}
+\item The paper focussed on proving the existence of proverse yaw with the Prandtl lift distribution as well as 
+\item postulating that birds most likely utilize the Prandtl circulation distribution as opposed to the elliptical circulation distribution.  
+\end{itemize}
 
 \end{frame}
 
@@ -189,21 +253,135 @@ The goals are:
 
 \begin{itemize}
 \item Investigate whether or not a tailless aircraft designed to have a Prandtl lift distribution will have satisfactory unaugmented (no control system except for the pilot and direct gearing of the control surfaces) handling qualities.
-\item Determine the performance characteristics of such an aircraft.  In particular is important to show very favourable L/D characteristics (L/D >= 53 for full scale aircraft) and laminar flow on the wing surfaces, even with reflexed profiles that are common on tailless designs.
-\item A secondary goal of the project is to investigate the feasibility of open hardware design using open source tools (as far as possible).  The focus of this goal is to use tools such as Git for product lifecycle management and to manage design projects using mainly text files as the source documents of the design.  Part of the experiment is to test collaboration online with known as well as anonymous collaborators in order to bootstrap mechanical/aeronautical engineering projects.
+\item Determine the performance characteristics of such an aircraft.  In particular is important to show very favourable L/D characteristics (L/D $\geq$ 53 for full scale aircraft) and laminar flow on the wing surfaces, even with reflexed profiles that are common on tailless designs.
 \end{itemize}
-
-It is hoped that this project will encourage other builders to manufacture similar designs and publish their designs, software and 
-data in a similar manner, so as to advance the state of the art of tailless aircraft in particular and engineering in general.
 
 \end{frame}
 
 
+\begin{frame}
+\frametitle{The Prandtl Investigation Goals}
+
+A secondary goal of the project is:
+
+\begin{itemize}
+\item To investigate the feasibility of open hardware design using open source tools (as far as possible).  
+\item To investigate whether a community of individuals can be leveraged to bootstrap innovation
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{The Prandtl Investigation Goals}
+
+\begin{itemize}
+\item Use tools such as Git for product lifecycle management and to manage design projects using mainly text files as the source documents of the design.
+\item Test collaboration online with known as well as anonymous collaborators in order to bootstrap mechanical/aeronautical engineering projects.
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{The Prandtl Investigation Goals}
+
+It is hoped that this project will encourage other builders to manufacture similar designs and publish their designs, software and data in a similar manner, so as to advance the state of the art of tailless aircraft in particular and engineering in general.
+
+
+
+\end{frame}
+
+
+
 \section{Prandtl glider built}
+
+
+\subsection{Specifications}
+
+\begin{frame}
+\frametitle{Prandtl Glider Specifications}
+
+\begin{itemize}
+\item Mass = 59 grams
+\item CNC polystyrene wing with twist distribution in \cite{PrandtlBowers}
+\item Balsa fuselage with prestik ballast
+\end{itemize}
+
+\includegraphics[width = 0.8\textwidth]{Pictures/P1Planform.png}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Prandtl Glider Manufacturing}
+
+Picture of the CNC of the aircraft
+
+\includegraphics[width = 0.8\textwidth]{Pictures/P1Planform.png}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Prandtl Glider Manufacturing}
+
+Picture of the completed aircraft
+
+\includegraphics[width = 0.8\textwidth]{Pictures/P1Planform.png}
+
+\end{frame}
+
+
+
+
 
 \subsection{Calculations} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 
+\begin{frame}
+\frametitle{Neutral point calculation}
+Show the neutral point calculation and show the comparison to the measured value later
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Neutral point calculation}
+Show the equtions for the sink polar but specifically the drag calculation.  Show the Prandtl factor instead of the Oswald factor.  It is a measure of how close it follows the Prandtl CL local shape.
+Show the value of CD obtained.
+
+
+\end{frame}
+
+
+
+
 \subsection{Flight tests}
+
+
+
+
+\begin{frame}
+\frametitle{Neutral point measurement}
+
+\begin{itemize}
+\item The advantage with model flight is that the neutral point can be iteratively determined with no safety impact.
+\item Since the flights are done in the linear region, it should be reasonably representative for a full scale aircraft as well.
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Aeroelasticity}
+
+Very large deflections possible if structure not stiff.  Note the unloaded tips.
+
+\includegraphics[width = 0.8\textwidth]{Pictures/MassiveDeflect.JPG}
+
+\end{frame}
 
 \subsection{Conclusions from glider}
 
@@ -247,6 +425,20 @@ data in a similar manner, so as to advance the state of the art of tailless airc
 \item It is imperative that a full scale aircraft 
 be manufactured since subscale tailless aircraft nearly always have satisfactory handling qualities.  Full scale tailless aircraft 
 have to be built in order to investigate the vulnerabilities of tailless aircraft to gusty conditions.
+\item Note the high angle of attack difference from \cite{ModelFlightNASA}
+\end{itemize}
+
+\includegraphics[width = 0.5\textwidth]{Pictures/ModelAeroVSFullSize.png}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Important notes}
+
+\begin{itemize}
 \item The Prandtl wing aircraft is envisaged to be a remotely piloted vehicle in all stages.  This is a risk reduction strategy since the technology of tailless aircraft has inherent risks as evidenced by the literature on the subject.  Even though this is an open hardware project, it is in no way encouraged that a piloted version of this aircraft be built.
 \end{itemize}
 
@@ -264,29 +456,19 @@ have to be built in order to investigate the vulnerabilities of tailless aircraf
 \begin{frame}
 \frametitle{Project information}
 
-The Bloodlesshound project is an open hardware, open software project.  Information about the project can be found on:  
+The Prandtl investigation is an open hardware, open software project.  Information about the project can be found on:  
 
 \begin{itemize}
-\item Youtube (search for ``Prandtl Aircraftwing'' on google)
+\item Youtube (search for ``Prandtl Aircraftwing'' on google) or paste in your browser:
+https://www.youtube.com/channel/UC6F9yife2uQ-U4vDy8oB4gA
 \item Instagram (ludwigprandtlwing)
 \item Mail the project at: Ludwigprandtlwing@gmail.com 
-\item Github (ludwigprandtlwing)
+\item Github (ludwigprandtlwing) https://github.com/ludwigprandtlwing
 \end{itemize}
 
 \end{frame}
 
 
-
-
-
-
-\begin{frame}
-\frametitle{Paragraphs of Text}
-Prandtl wing aircraft of the bloodlesshound project:  Second version 2.25metre wing span.
-
-
-
-\end{frame}
 
 
 \begin{frame}
@@ -316,7 +498,7 @@ The Prandtl investigation is an open hardware, open software project.  As such:
 \bibitem{omegataupodcastPrandtl} Markus Voelter (2017) omega tau podcast number 256 – Flight Research at NASA Armstrong, Part 1: Subscale, http://omegataupodcast.net/256-flight-research-at-nasa-armstrong-part-1-subscale/
 \bibitem{Prandtl1921} Prandtl, L.  (1921)  Applications  of  modern hydrodynamics  to  aeronautics,  NACA  Report  No  116 (Washington, DC).
 \bibitem{Prandtl1933} Prandtl L (1933) Über tragfl\"ugel kleinsten induzierten widerstandes. Zeitschrift für Flugtecknik und Motorluftschiffahrt, 1 VI 1933 (M\"unchen, Deustchland).
-
+\bibitem{ModelFlightNASA} Joseph R. Chambers, Modelling Flight - The role of dynamically scaled free-flight models in support of NASA's aerospace programs, ISBN 978-0-16-084633-5.
 
 
 \end{thebibliography}
