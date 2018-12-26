@@ -175,13 +175,22 @@ Quick rundown of theory from the NASA paper
 
 List all the potential gains from this distribution (Less area parasitic, no yaw control necessary because no adverse yaw, leading to less drag, better handling qualities for tailless aircraft)
 
-Show the equation of the CL local from the patent.
+Show the equation of the CL local from the patent \cite{PrandtlPatent}.
 
-Talk about the negatives:  Must still prove all these claims and this will cost money.
-Nickel and Wohlfahrt specifically devote a paragraph stating that this lift distribution is not worth it.  These are risks.
-Larger span means that it would find limited application in commercial aviation due to existing infrastructure.
+$\gamma_s(y) = \frac{32}{3 \pi AR} C_L \bigg( 1 - \frac{y^2}{s^2} \bigg) \sqrt{s^2 - y^2}$
+
+\end{frame}
 
 
+\section{Downside to Prandtl's 1933 lift distribution}
+
+\begin{frame}
+\frametitle{The Prandtl lift distribution}
+\begin{itemize}
+\item Must still prove the claims (11\% less induced drag and good tailles handling qualities, assuming the proof is sufficient already for proverse yaw) and this involves significant cost.
+\item Nickel and Wohlfahrt \cite{NickelWohlfahrt} specifically devote a section of the book stating that this lift distribution is not worth the cost.  It states that the bell shaped lift distribution leads to higher drag for the same lift and that the benefit of the distribution is only there for negating adverse yaw.  It cites the Horten aircraft as an example.  It has to be noted that the Horten aircraft did not employ highly non-linear twist, so they may not have realised the full benefits of the lift distribution.
+\item Larger span means that it would find limited application in commercial aviation due to existing infrastructure.
+\end{itemize}
 \end{frame}
 
 
@@ -375,6 +384,24 @@ Show the value of CD obtained.
 
 
 \begin{frame}
+\frametitle{Aerodynamic performance}
+
+\begin{itemize}
+\item Reynolds number was very low and flow probably fully turbulent.
+\item XFOIL analysis shows this would result in low $\frac{L}{D}$
+\end{itemize}
+
+
+\includegraphics[width = 0.8\textwidth]{Pictures/PrandtlRoot5alhpa.png}
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
 \frametitle{Aeroelasticity}
 
 Very large deflections possible if structure not stiff.  Note the unloaded tips.
@@ -391,7 +418,7 @@ Very large deflections possible if structure not stiff.  Note the unloaded tips.
 \begin{itemize}
 \item The aircraft was stable
 \item Observations indicate that proverse yaw might have been achieved
-\item Glide performance was poor, but is attributed to incorrect trim speed and rough finish of polystyrene wing
+\item Glide performance was poor, but is attributed to incorrect trim speed and rough finish of polystyrene wing.  Also low Reynolds number.
 \item The CNC manufacturing concept was proven
 \item The glider results are sufficient encouraging to continue investigation
 \end{itemize}
@@ -499,6 +526,7 @@ The Prandtl investigation is an open hardware, open software project.  As such:
 \bibitem{Prandtl1921} Prandtl, L.  (1921)  Applications  of  modern hydrodynamics  to  aeronautics,  NACA  Report  No  116 (Washington, DC).
 \bibitem{Prandtl1933} Prandtl L (1933) Über tragfl\"ugel kleinsten induzierten widerstandes. Zeitschrift für Flugtecknik und Motorluftschiffahrt, 1 VI 1933 (M\"unchen, Deustchland).
 \bibitem{ModelFlightNASA} Joseph R. Chambers, Modelling Flight - The role of dynamically scaled free-flight models in support of NASA's aerospace programs, ISBN 978-0-16-084633-5.
+\bibitem{NickelWohlfahrt} Karl Nickel and Michael Wohlfahrt, Tailless aircraft in theory and practice.
 
 
 \end{thebibliography}

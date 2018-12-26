@@ -278,9 +278,6 @@ INPUT PrandtlWing.toc
 INPUT Pictures/NoIdea.JPG
 INPUT ./Pictures/NoIdea.JPG
 INPUT ./Pictures/NoIdea.JPG
-INPUT Pictures/PrandtlDflight.jpg
-INPUT ./Pictures/PrandtlDflight.jpg
-INPUT ./Pictures/PrandtlDflight.jpg
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
@@ -302,6 +299,9 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmssi8.tfm
+INPUT Pictures/PrandtlDflight.jpg
+INPUT ./Pictures/PrandtlDflight.jpg
+INPUT ./Pictures/PrandtlDflight.jpg
 INPUT Pictures/P1Planform.png
 INPUT ./Pictures/P1Planform.png
 INPUT ./Pictures/P1Planform.png
@@ -309,6 +309,9 @@ INPUT Pictures/P1Planform.png
 INPUT ./Pictures/P1Planform.png
 INPUT Pictures/P1Planform.png
 INPUT ./Pictures/P1Planform.png
+INPUT Pictures/PrandtlRoot5alhpa.png
+INPUT ./Pictures/PrandtlRoot5alhpa.png
+INPUT ./Pictures/PrandtlRoot5alhpa.png
 INPUT Pictures/MassiveDeflect.JPG
 INPUT ./Pictures/MassiveDeflect.JPG
 INPUT ./Pictures/MassiveDeflect.JPG
@@ -326,10 +329,14 @@ OUTPUT PrandtlWing.snm
 INPUT PrandtlWing.aux
 INPUT ./PrandtlWing.out
 INPUT ./PrandtlWing.out
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
