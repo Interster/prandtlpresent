@@ -9,3 +9,5 @@
 *.toc
 *.vrb
 *.dvi
+*.fls
+*.fdb_latexmk
