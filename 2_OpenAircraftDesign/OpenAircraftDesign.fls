@@ -298,6 +298,20 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmssi8.tfm
+INPUT Pictures/OpenFoamBWB.png
+INPUT ./Pictures/OpenFoamBWB.png
+INPUT ./Pictures/OpenFoamBWB.png
+INPUT Pictures/ProjectChronoRover.png
+INPUT ./Pictures/ProjectChronoRover.png
+INPUT ./Pictures/ProjectChronoRover.png
+OUTPUT OpenAircraftDesign.vrb
+INPUT OpenAircraftDesign.vrb
+INPUT OpenAircraftDesign.vrb
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+OUTPUT OpenAircraftDesign.vrb
+INPUT OpenAircraftDesign.vrb
+INPUT OpenAircraftDesign.vrb
 INPUT Pictures/GaugeBlockMetricSet.jpg
 INPUT ./Pictures/GaugeBlockMetricSet.jpg
 INPUT ./Pictures/GaugeBlockMetricSet.jpg
@@ -312,6 +326,9 @@ OUTPUT OpenAircraftDesign.snm
 INPUT OpenAircraftDesign.aux
 INPUT ./OpenAircraftDesign.out
 INPUT ./OpenAircraftDesign.out
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb
@@ -319,3 +336,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb

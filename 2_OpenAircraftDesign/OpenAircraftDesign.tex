@@ -134,6 +134,7 @@ Find out more at the following accounts:
 \begin{itemize}
 \item Working with the Prandtl wing has highlighted the need for new ways of developing an aircraft.
 \item This is made possible by broad changes as a result of mainly internet connectivity and the free software movements.
+\item Open source engineering might be the solution
 \end{itemize}
 
 \end{frame}
@@ -141,13 +142,16 @@ Find out more at the following accounts:
 
 
 \begin{frame}
-\frametitle{Introduction}
+\frametitle{Introduction:  Aircraft specific topics}
 
-Metcalfe's law states the effect of a telecommunications network is proportional to the square of the number of connected users of the system ($n^2$) (from Wikipedia)
-
-It is proposed that open sourced innovation and engineering on a suitably sophisticated platform with a sufficient number of users could have far reaching implications for high technology engineering because of the scaling principle.
+\begin{itemize}
+\item Aircraft design requires specialist knowledge and skills  
+\item Large capital investment is required, often with little guarantee of return on investment and often at low marginsconnectivity and the free software movements.
+\item Things have changed though, with remotely piloted vehicles that can reduce risk, open source software, first person view, collaboration tools (GIT)
+\end{itemize}
 
 \end{frame}
+
 
 
 \begin{comment}
@@ -169,9 +173,19 @@ Pure trade (classical horse trading) immediately negates the losses associated w
 
 
 
+\section{Requirements for networked innovation} 
 
-%------------------------------------------------
-\section{Requirements for networked innovation} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+\begin{frame}
+\frametitle{Networked innovation}
+
+Metcalfe's law states the effect of a telecommunications network is proportional to the square of the number of connected users of the system ($n^2$) (from Wikipedia)
+
+It is proposed that open sourced innovation and engineering on a suitably sophisticated platform with a sufficient number of users could have far reaching implications for high technology engineering because of the scaling principle.
+
+Translated this means:  Get many people in a network working on your aircraft and you can get it done in a reasonable time.
+
+\end{frame}
+
 
 
 \begin{frame}
@@ -188,13 +202,6 @@ The following seems to be necessary for this kind of innovation/product developm
 \item No restrictions on information - therefore open hardware and NO RESTRICTIVE PATENTS
 \end{itemize}
 \end{frame}
-
-%------------------------------------------------
-
-%------------------------------------------------
-
-\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
-
 
 
 \section{FOSS Tools}
@@ -220,9 +227,76 @@ Many tools are required for designing, analysing and building an aircraft.  The 
 \begin{frame}
 \frametitle{CAD}
 
-Show screenshots of each of the listed tools.  For lifting line, show python lifting line code.
+CAD model of the Prandtl wing
 
 \end{frame}
+
+
+\begin{frame}
+\frametitle{FEM}
+
+FreeCAD Calculix FEA model of the Prandtl wing
+
+\end{frame}
+
+\begin{frame}
+\frametitle{OpenFoam}
+
+\begin{figure}
+\includegraphics[width=0.4\linewidth]{Pictures/OpenFoamBWB.png}
+\end{figure}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Project Chrono}
+
+\begin{figure}
+\includegraphics[width=0.8\linewidth]{Pictures/ProjectChronoRover.png}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
+\frametitle{Python}
+$$ 
+\sum_{n=1}^\infty A_n \sin(n \theta) \bigg(  \sin(\theta) + \frac{n C_{l \alpha} c}{8 s} \bigg) = \frac{C_{l \alpha} c}{8 s} \sin(\theta) (\alpha_\infty + \alpha_{geo} - \alpha_0) \qquad 
+$$
+\begin{example}[Lifting Line Code]
+\begin{verbatim}
+a = np.zeros([spanstations, nFourier])
+for m in range(a.shape[0]): # rows
+    for n in range(a.shape[1]): # columns
+        a[m,n] = sin((n + 1)*theta[m])*(sin(theta[m]) 
+        + (n + 1)*cla*c/(8*s))
+
+b = np.zeros([spanstations])
+for m in range(b.shape[0]): # rows of column vector
+    b[m] = ((cla*c)/(8*s))*sin(theta[m])*(alfainf + 
+    alfageo - alfazero)
+x = np.linalg.solve(a, b)
+\end{verbatim}
+\end{example}
+
+\end{frame}
+
+
+\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
+\frametitle{Git}
+
+\begin{example}[Updating a repository]
+\begin{verbatim}
+>>git add .
+>>git commit -m "Update the presentation"
+>>git push origin master
+\end{verbatim}
+\end{example}
+
+\end{frame}
+
 
 
 \section{FOSS philosophy}
@@ -230,21 +304,38 @@ Show screenshots of each of the listed tools.  For lifting line, show python lif
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Philosophy begin FOSS}
+\frametitle{Philosophy of Free Open Source Software (FOSS)}
 
 Free Open Source Software (FOSS) has some of its roots with the Free Software Foundation that started life at MIT and was responsible for one of the first and certainly one of the longest lasting text environments called emacs.
 
 FOSS does in part democratize software and makes it transparent for everyone to use and edit with very few restrictions.
 
+Free means not only `at zero cost', but also liberated (\emph{libre}) in the sense that it may be changed and distributed with little or no restriction
+
 The implication of libre software is that it enables innovation by lowering the barriers to entry and standardizing methods all across the globe.
 
 This might not seem very important at face value, but it has great consequences that have not been fully realized yet.
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Philosophy of FOSS}
 
 The fact that libre software is available at no cost or lag (the time it takes to release software) has the following consequences:
 
 \begin{itemize}
 \item Skilled engineers that previously had little or no access to high end engineering software are now free to innovate
 \item Libre software allows proper scaling to be possible, meaning that the number of engineers that can work on a problem is now only limited by the number of engineers you can find and not by license restrictions
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Philosophy of FOSS}
+
+\begin{itemize}
 \item The scaling of the engineering profession will have an exponential effect on innovation
 \item It enables engineers to use complexity to their advantage since these packages enables execution of more complex analyses rapidly
 \item Libre software provide a way of levelling the playing field with respect to engineering input costs, although it put a premium on skills, since engineers using it usually need more knowledge than the average user of paid software, since there is less technical support.
@@ -253,6 +344,7 @@ The fact that libre software is available at no cost or lag (the time it takes t
 
 \end{frame}
 
+
 %------------------------------------------------
 
 %------------------------------------------------
@@ -260,9 +352,31 @@ The fact that libre software is available at no cost or lag (the time it takes t
 \begin{frame}
 \frametitle{Philosophy begin FOSS}
 
+The scaling effect of libre software is not as immediately apparent as it should be.  Let us explain by means of an analogy.
+Let us examine a common system of metrology such as the metric system or the imperial system.
+Up to 1920's many countries had different definitions of an inch.
+Gauge blocks were invented in 1896 by Swedish machinist Carl Edvard Johansson.
+To a large degree these gauge blocks standardized the industrial inch and also could be used for the metric system.
 
+The gauge blocks made it possible for different machine shops, companies and indeed countries to have standard references of measurement.
+
+This might not seem immediately apparent, but this enables a global scalable manufacturing system.  Lego blocks made in Chech republic fits onto blocks made in the U.S. and not only that, they fit onto blocks made thirty years ago.
+
+You can manufacture more, quicker than ever before at higher quality.
 
 \end{frame}
+
+
+
+\begin{frame}
+\frametitle{Figure}
+Metric gauge blocks from Wikipedia.
+\begin{figure}
+\includegraphics[width=0.8\linewidth]{Pictures/GaugeBlockMetricSet.jpg}
+\end{figure}
+\end{frame}
+
+
 
 \begin{comment}
 
@@ -288,7 +402,14 @@ You can manufacture more, quicker than ever before at higher quality.
 \begin{frame}
 \frametitle{Philosophy begin FOSS}
 
+What is the relevance of gauge blocks to libre software?
+The answer is that libre software is the gauge blocks of the software industry.
+All engineers in the world have the opportunity to use standard and benchmarked methods that have taken thousands of hours to develop.
 
+They can share their ideas globally and scale on a level that has never been seen before.
+All this without sacrificing flexibility, since standard methods can be forked and custom developed (while possibly later standardizing itself).  All the while the body of tools can grow.
+
+You can analyze and engineer more products, quicker than ever before at higher quality.
 
 \end{frame}
 
@@ -309,7 +430,16 @@ You can analyze and engineer more products, quicker than ever before at higher q
 \begin{frame}
 \frametitle{Philosophy begin FOSS}
 
+Gauge blocks standardized measurement and brought metrology out into the open.  This meant that specialized knowledge was not limited to companies or in a previous time, guilds.
 
+Similarly libre software brings advanced analysis to any engineer willing to try and use the software.  It is now not limited to companies (in essence macro guilds) with large software budgets.
+
+Standardization increased the gross product of manufacturing immensely over the last century leading to great prosperity for the entities that embraced it.
+
+Libre software has the possiblility of providing just such a platform for innovation to scale exponentially.  Also with the accompanying properity and increase in gross product.
+This will be aided by collaborative platforms such as Github that facilitates the large scale sharing of information, methods and contact between engineers.
+
+Thus facilitating the free movement of ideas, intellectual (and consequently monetary) capital and contact between persons.
 
 \end{frame}
 
@@ -328,13 +458,7 @@ Thus facilitating the free movement of ideas, intellectual (and consequently mon
 \end{comment}
 
 
-\begin{frame}
-\frametitle{Figure}
-Metric gauge blocks from Wikipedia.
-\begin{figure}
-\includegraphics[width=0.8\linewidth]{Pictures/GaugeBlockMetricSet.jpg}
-\end{figure}
-\end{frame}
+
 
 
 \section{The engineering (r)evolution}
@@ -346,6 +470,14 @@ Metric gauge blocks from Wikipedia.
 
 The lines are blurring between engineering and software coding.
 
+\begin{itemize}
+\item in FreeCAD a whole component can be constructed using python commands.  The versions of the CAD document can be controlled by Git, since the script file is a text file
+\item Structural analysis calculations in a python notebook is a text file 
+\item FEA runs produce large amounts of data stored in databases - requires programming to query and analyze further
+\item Therefore adopt software methodologies for  engineering projects, such as agile project management
+\end{itemize}
+
+All text files are version controlled with git - another software tool
 
 \end{frame}
 
@@ -408,6 +540,18 @@ Die belangrikheid van desentraliseerde organisasie moet hier onderstreep word. D
 
 Explain how tailless aircraft evolve
 
+Tailless aircraft have lagged significantly behind aircraft with a horizontal tail.  This is so severe that it is estimated that 10 times more development is now required to field a competitive tailless design when compared with a tailed design.
+
+Much of the the performance of the tailless concept rests on the performance of the often reflexed airfoil of the aircraft.  In order to be competitive tailless aircraft also require laminar airfoils such as their tailed competitors.  But reflexed laminar profiles are extremely difficult to develop.  
+
+Developing airfoil profiles requires many windtunnel hours and a littany of CFD and potential flow calculation runs.  The development of airfoils have been described as an evolutionary process and genetic algorithms have even been suggested in the past to develop them.
+So imagine how restrictive it would be if the number of generations or iterations of an airfoil would be limited by not executing as many CFD runs as possible.
+This happens in two ways since licenses would restrict the number of computers and engineers that would be working on the airfoil.  Furthermore it restricts capital investment in this concept since resources are diverted to expensive software costs.  
+The diversion of capital resources to software further restricts the number of engineers that would be working on the problem.
+
+This is a specific example for airfoils but this kind of restriction would be a similar barrier to all innovation.  
+Furthermore the establishment of a license structure leads to a silo approach to product design, where certain departments keep the analysis tools in neat silos and preventing the innovation enabling tools to spread to other parts of an organization or innovatory clan.
+
 \end{frame}
 
 \begin{comment}
@@ -444,7 +588,7 @@ Free software and open source spreads ideas and makes mutation and natural selec
 
 
 
-\section{Open Source and currency}
+\section{Open Source and currency and patents}
 
 
 \begin{frame}
@@ -483,8 +627,8 @@ Money is simply a means of exchanging goods and services on an equal value basis
 \frametitle{Fractional banking}
 
 \begin{itemize}
-\item Personal finance is done on a zero sum gain basis (leads to most misunderstanding)
-\item With economic growth (as with innovation) the system is not zero sum gain
+\item Personal finance is done on a zero sum game basis (leads to most misunderstanding)
+\item With economic growth (as with innovation) the system is not zero sum game
 \item The example is fractional banking
 \end{itemize}
 
@@ -553,12 +697,77 @@ Money is simply a means of exchanging goods and services on an equal value basis
 
 \begin{itemize}
 \item Why use money as a tool for exchange of intellectual capital when it can be exchanged directly
-\item Herzberg's theorem makes it possible for ideas, designs and software to be exchanged without the resulting loss of that information to the giver
+\item It is possible for ideas, designs and software to be exchanged without the resulting loss of that information to the giver (see later expansion of this idea)
 \item Resulting much more expensive product that few people can afford
 \item You are therefore not poorer by open sourcing but instead you become an investor in intellectual capital
 \end{itemize}
 
 \end{frame}
+
+
+\begin{frame}
+\frametitle{Use money appropriately}
+
+\begin{itemize}
+\item We are essentially not applying money correctly by using it to pay for engineering resources sometimes (especially during concept phases)
+\item Money should not be the end. But rather should only be used as a tool for exchange where exchange is not otherwise possible
+\item Using money for exchanges where it is not required shows fundamental lack of understanding. And causes enormous losses
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Overspending}
+
+\begin{itemize}
+\item Intellectual overspending is also possible 
+\item Example:  A person that only works on math problems or interesting programming problems fails to gather food or money to buy food and now has a survival problem
+\item Equally only working on open source software will lead to poverty
+\item Caveat:  An important balance has to be struck with intellectual capital as well
+\item The open source practioners should still value and sell their time
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Overspending Example}
+
+\begin{itemize}
+\item The cautionary tale of Chinese great leap forward is applicable to open sourcing 
+\item Millions of people stopped farming for food and started only making steel without making a deal to exchange some of the steel for food
+\item  This shows a fundamental lack of understanding of an economy.  The exchange is important. 
+\item It might have been OK, had some people still farmed while others made steel
+\item But this did not happen.  Millions starved and insult to injury was that the steel was of poor quality.
+\item Similarly dropping everything you do to to pursue open source would be folly
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Preventing Intellectual Overspending}
+
+\begin{itemize}
+\item Development of several small tools are important. This is antifragile. Because it prevents a centralized overexpenditure of intellectual capital.
+\item Small tools part of libraries developed in a decentralized way also enables scaling.  It enables networks of people to spend small amounts of intelectual capital.
+\item  Large pieces of paid software are an example of intellectual overspending and achieve the opposite.  They centralize the several small tools into one.  Leading to centralized control and the accompanying fragility of concentration.  Now engineers are concentrated and are vulnerable because they are totally reliant on money as an exchange for their services/software.  Inefficiencies result from this.
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Free money:  You pick it up it's yours}
+
+\begin{itemize}
+\item Essentially NASA gave us (non US citizens) free intellectual capital by open sourcing the Prandtl wing and their technical reports server
+\item Or maybe they just invested their government's tax revenue semi wisely
+\end{itemize}
+
+\end{frame}  
+
 
 
 \begin{comment}
@@ -591,6 +800,111 @@ Essentially NASA gave us intellectual capital by open sourcing the Prandtl wing.
 \end{comment}
 
 
+
+
+
+\begin{frame}
+\frametitle{FAQ:  If I open source then is my idea is lost}
+
+Second most common FAQ with open source:  
+
+\begin{center}
+
+\emph{How do you patent your idea with open source?}
+
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Patents, ideas and concepts are not zero sum game}
+
+\begin{center}
+
+When someone shares an idea, concept or method (this extends to software and CAD) with someone else then the person that shared the information still possesses the information.  Information is not destroyed by transmission.  This makes it fundamentally different to commodities and property, where once ownership is transferred the original owner does not possess the commodity or property.  As such information is not tradeable.
+
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{This is not a new idea}
+
+\begin{center}
+
+Thomas Jefferson to Isaac McPherson, 13 August 1813:
+
+\emph{if nature has made any one thing less susceptible, than all others, of exclusive property, it is the action of the thinking power called an Idea; which an individual may exclusively possess as long as he keeps it to himself; but the moment it is divulged, it forces itself into the possession of every one, and the reciever cannot dispossess himself of it. it’s peculiar character too is that no one possesses the less, because every other possesses the whole of it. he who recieves an idea from me, recieves instruction himself, without lessening mine; }
+
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{This is not a new idea}
+
+\begin{center}
+
+Thomas Jefferson to Isaac McPherson, 13 August 1813:
+
+\emph{... as he who lights his taper at mine, recieves light without darkening me. that ideas should freely spread from one to another over the globe, for the moral and mutual instruction of man, and improvement of his condition, seems to have been peculiarly and benvolently designed by nature, when she made them, like fire, expansible over all space, without lessening their density in any point; and like the air in which we breathe, move, and have our physical being, incapable of confinement, or exclusive appropriation. }
+
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Story time:  A Patent on the motor vehicle}
+
+\begin{itemize}
+\item The Association of Licensed Automobile Manufacturers (ALAM) used the patent on the motor vehicle to force manufacturers pay a 5\% royalty on all cars produced
+\item They had some degree of control of who was allowed to produce cars
+\item They denied the franchise to Henry Ford
+\item Ford challenged and eventually beat ALAM in court to win the right to produce motor vehicles
+\item Patents nearly negatively influenced the mass production of vehicles
+\item It therefore nearly denied many people the freedom of movement
+\item Henry Ford did NOT patent his moving assembly line.  The stationary assembly line was however patented by Ransom Olds in 1901, long before the Ford factories.
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Joke time:  A Patent on flight}
+
+From Wikipedia:
+
+\begin{itemize}
+\item The Wright brothers patent war stalled development of the U.S. aviation industry 
+\item Airplane development in the United States fell so far behind Europe that in World War I American pilots were forced to fly European combat aircraft, instead
+\item After the war began, the U.S. Government pressured the aviation industry to form an organization to share patents
+\end{itemize}
+
+\begin{center}
+Joke:  Would they have told birds to stop flying because they didn't pay their royalties?
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Who owns the idea}
+
+\begin{center}
+
+The following points arise:
+
+\begin{itemize}
+\item Ideas are not tradeable like commodities
+\item The fairness of exclusive rights to an idea is dubious
+\item Patenting the laws of physics seems unintelligent
+\item International law provides limited protection for patents in any event
+\item Patents probably are not helpful to innovation
+\item The question is not whether you should patent, but rather should you not work harder to get the first mover advantage (this is arguably more valuable)
+\end{itemize}
+
+\end{center}
+\end{frame}
+
+
 \section{Conclusions}
 
 \begin{frame}
@@ -599,10 +913,13 @@ Essentially NASA gave us intellectual capital by open sourcing the Prandtl wing.
 The following conclusions are personal opinions:
 
 \begin{itemize}
-\item Open source tools and platforms have a potentially important role to play in future engineering and innovation ventures
+\item Open source tools and platforms have an important role to play - especially for aircraft that require so much analysis
+\item Open source tools have reached a level of maturity that is useful for some industrial application - they are not toys any more
 \item Network effects are important for innovation
-\item Open hardware and software will accelerate economic activity and prosperity through value and intellectual capitcal creation
+\item Open hardware and software will accelerate economic activity and prosperity through value and intellectual capital creation
 \item Engineering is coding
+\item Information should be exchanged without the use of currency to prevent hysteresis losses
+\item Exclusive ownership of ideas is probably a barrier to innovation
 \end{itemize}
 \end{frame}
 
