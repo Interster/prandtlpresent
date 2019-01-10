@@ -116,6 +116,7 @@ Unaffiliated \\ % Your institution for the title page
 \begin{itemize}
 \item An alternative to the elliptical lift distribution exists from Prandtl's work in 1933 \cite{Prandtl1933} and should be investigated 
 \item The Prandtl lift distribution could potentially lead to 11\% less induced drag for the same amount of structure compared to the elliptical lift distribution
+\item The Prandtl lift distribution could be used to produce less noisy propeller blades
 \item It has applications in tailless aircraft design and should be investigated
 \item Aircraft development is time consuming and expensive and way has to be found to make possible investigation of the Prandtl lift distribution
 \end{itemize}
@@ -172,14 +173,34 @@ Show the non-constant downwash and the upwash at the tips.
 
 Quick rundown of theory from the NASA paper
 
-
-List all the potential gains from this distribution (Less area parasitic, no yaw control necessary because no adverse yaw, leading to less drag, better handling qualities for tailless aircraft)
-
-Show the equation of the CL local from the patent \cite{PrandtlPatent}.
-
-$\gamma_s(y) = \frac{32}{3 \pi AR} C_L \bigg( 1 - \frac{y^2}{s^2} \bigg) \sqrt{s^2 - y^2}$
-
 \end{frame}
+
+
+\begin{frame}
+    \frametitle{The Prandtl lift distribution}
+
+    Potential gains from this circulation distribution:
+
+    \begin{itemize}
+    \item Less area parasitic drag (partly because no tail required, partly because of aspect ratio) 
+    \item No yaw control surface like a rudder is required because of absence of adverse yaw, leading to less drag from this control surface
+    \item Better handling qualities for tailless aircraft compared to the elliptical circulation distribution
+    \end{itemize} 
+        
+    
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{The Prandtl lift distribution}
+        
+    The equation of the local $C_L$ from the NASA patent \cite{PrandtlPatent}.
+    
+    \begin{center}
+    $\gamma_s(y) = \frac{32}{3 \pi AR} C_L \bigg( 1 - \frac{y^2}{s^2} \bigg) \sqrt{s^2 - y^2}$
+    \end{center}
+
+    \end{frame}
 
 
 \section{Downside to Prandtl's 1933 lift distribution}
@@ -188,7 +209,7 @@ $\gamma_s(y) = \frac{32}{3 \pi AR} C_L \bigg( 1 - \frac{y^2}{s^2} \bigg) \sqrt{s
 \frametitle{The Prandtl lift distribution}
 \begin{itemize}
 \item Must still prove the claims (11\% less induced drag and good tailles handling qualities, assuming the proof is sufficient already for proverse yaw) and this involves significant cost.
-\item Nickel and Wohlfahrt \cite{NickelWohlfahrt} specifically devote a section of the book stating that this lift distribution is not worth the cost.  It states that the bell shaped lift distribution leads to higher drag for the same lift and that the benefit of the distribution is only there for negating adverse yaw.  It cites the Horten aircraft as an example.  It has to be noted that the Horten aircraft did not employ highly non-linear twist, so they may not have realised the full benefits of the lift distribution.
+\item Nickel and Wohlfahrt \cite{NickelWohlfahrt} specifically devote a section of the book stating that this lift distribution is not worth the cost.  It states that the bell shaped lift distribution leads to higher drag (during the cruise phase with no control deflection) for the same lift and that the benefit of the distribution is only there for negating adverse yaw.  It cites the Horten aircraft as an example.  It has to be noted that the Horten aircraft did not employ highly non-linear twist, so they may not have realised the full benefits of the lift distribution.
 \item Larger span means that it would find limited application in commercial aviation due to existing infrastructure.
 \end{itemize}
 \end{frame}
@@ -317,7 +338,9 @@ It is hoped that this project will encourage other builders to manufacture simil
 \item Balsa fuselage with prestik ballast
 \end{itemize}
 
+\begin{center}
 \includegraphics[width = 0.8\textwidth]{Pictures/P1Planform.png}
+\end{center}
 
 \end{frame}
 
@@ -325,9 +348,11 @@ It is hoped that this project will encourage other builders to manufacture simil
 \begin{frame}
 \frametitle{Prandtl Glider Manufacturing}
 
-Picture of the CNC of the aircraft
+The CNC cutting of the wings
 
-\includegraphics[width = 0.8\textwidth]{Pictures/P1Planform.png}
+\begin{center}
+    \includegraphics[width = 0.8\textwidth]{Pictures/CNCcutWing.png}
+\end{center}    
 
 \end{frame}
 
@@ -335,9 +360,11 @@ Picture of the CNC of the aircraft
 \begin{frame}
 \frametitle{Prandtl Glider Manufacturing}
 
-Picture of the completed aircraft
+The CNC cut wings from polystyrene
 
-\includegraphics[width = 0.8\textwidth]{Pictures/P1Planform.png}
+\begin{center}
+\includegraphics[width = 0.8\textwidth]{Pictures/PolystyreneCut.jpg}
+\end{center}
 
 \end{frame}
 
@@ -378,6 +405,9 @@ Show the value of CD obtained.
 \item The advantage with model flight is that the neutral point can be iteratively determined with no safety impact.
 \item Since the flights are done in the linear region, it should be reasonably representative for a full scale aircraft as well.
 \end{itemize}
+
+Show the drag polar calculated and where the actual aircraft flew trimmed flight.
+Show the CD calculated for the aircraft
 
 \end{frame}
 
