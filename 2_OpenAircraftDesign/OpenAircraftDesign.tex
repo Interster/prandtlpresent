@@ -243,6 +243,10 @@ Many tools are required for designing, analysing and building an aircraft.  The 
 
 CAD model of the Prandtl wing
 
+\begin{figure}
+        \includegraphics[width=0.7\linewidth]{Pictures/Prandtl2FreeCAD.png}
+\end{figure}
+
 \end{frame}
 
 
@@ -251,10 +255,17 @@ CAD model of the Prandtl wing
 
 FreeCAD Calculix FEA model of the Prandtl wing
 
+\begin{figure}
+        \includegraphics[width=0.7\linewidth]{Pictures/Prandtl2FreeCAD_FEM.png}
+\end{figure}
+
+
 \end{frame}
 
 \begin{frame}
 \frametitle{OpenFoam}
+
+Blended wing body CFD analysis results from OpenFoam
 
 \begin{figure}
 \includegraphics[width=0.4\linewidth]{Pictures/OpenFoamBWB.png}
@@ -266,6 +277,8 @@ FreeCAD Calculix FEA model of the Prandtl wing
 
 \begin{frame}
 \frametitle{Project Chrono}
+
+A rover analyzed for rigid body dynamics with Project Chrono
 
 \begin{figure}
 \includegraphics[width=0.8\linewidth]{Pictures/ProjectChronoRover.png}
@@ -320,15 +333,19 @@ x = np.linalg.solve(a, b)
 \begin{frame}
 \frametitle{Philosophy of Free Open Source Software (FOSS)}
 
-Free Open Source Software (FOSS) has some of its roots with the Free Software Foundation that started life at MIT and was responsible for one of the first and certainly one of the longest lasting text environments called emacs.
+\begin{itemize}
+\item Free Open Source Software (FOSS) has some of its roots with the Free Software Foundation (started life with students from MIT), responsible for emacs
 
-FOSS does in part democratize software and makes it transparent for everyone to use and edit with very few restrictions.
+\item FOSS does in part democratize software and makes it transparent for everyone to use and edit with very few restrictions.
+        
+\item Free means not only `at zero cost', but also liberated (\emph{libre}) in the sense that it may be changed and distributed with little or no restriction
+        
+\item The implication of libre software is that it enables innovation by lowering the barriers to entry and standardizing methods all across the globe.
+        
+\item This might not seem very important at face value, but it has great consequences that have not been fully realized yet.
+                
+\end{itemize}
 
-Free means not only `at zero cost', but also liberated (\emph{libre}) in the sense that it may be changed and distributed with little or no restriction
-
-The implication of libre software is that it enables innovation by lowering the barriers to entry and standardizing methods all across the globe.
-
-This might not seem very important at face value, but it has great consequences that have not been fully realized yet.
 
 \end{frame}
 
@@ -366,48 +383,29 @@ The fact that libre software is available at no cost or lag (the time it takes t
 \begin{frame}
 \frametitle{Philosophy begin FOSS}
 
-The scaling effect of libre software is not as immediately apparent as it should be.  Let us explain by means of an analogy.
-Let us examine a common system of metrology such as the metric system or the imperial system.
-Up to 1920's many countries had different definitions of an inch.
-Gauge blocks were invented in 1896 by Swedish machinist Carl Edvard Johansson.
-To a large degree these gauge blocks standardized the industrial inch and also could be used for the metric system.
+\begin{itemize}
+\item The scaling effect of libre software is not as immediately apparent as it should be.  Let us explain by means of an analogy.  Let us examine a common system of metrology such as the metric system or the imperial system.
+\item Up to 1920's many countries had different definitions of an inch.
+\item Gauge blocks were invented in 1896 by Swedish machinist Carl Edvard Johansson.  To a large degree these gauge blocks standardized the industrial inch and also could be used for the metric system.
+\item The gauge blocks made it possible for different machine shops, companies and indeed countries to have standard references of measurement.
+\item This enables a global scalable manufacturing system.  Lego blocks made in Chech republic fits onto blocks made in the U.S. and not only that, they fit onto blocks made thirty years ago.
+\item You can manufacture more, quicker than ever before at higher quality.        
+\end{itemize}
 
-The gauge blocks made it possible for different machine shops, companies and indeed countries to have standard references of measurement.
-
-This might not seem immediately apparent, but this enables a global scalable manufacturing system.  Lego blocks made in Chech republic fits onto blocks made in the U.S. and not only that, they fit onto blocks made thirty years ago.
-
-You can manufacture more, quicker than ever before at higher quality.
 
 \end{frame}
 
 
 
 \begin{frame}
-\frametitle{Figure}
-Metric gauge blocks from Wikipedia.
+
+\frametitle{Metric gauge blocks}
+
+Metric gauge blocks from Wikipedia:
 \begin{figure}
 \includegraphics[width=0.8\linewidth]{Pictures/GaugeBlockMetricSet.jpg}
 \end{figure}
 \end{frame}
-
-
-
-\begin{comment}
-
-The scaling effect of libre software is not as immediately apparent as it should be.  Let us explain by means of an analogy.
-Let us examine a common system of metrology such as the metric system or the imperial system.
-Up to 1920's many countries had different definitions of an inch.
-Gauge blocks were invented in 1896 by Swedish machinist Carl Edvard Johansson.
-To a large degree these gauge blocks standardized the industrial inch and also could be used for the metric system.
-
-The gauge blocks made it possible for different machine shops, companies and indeed countries to have standard references of measurement.
-
-This might not seem immediately apparent, but this enables a global scalable manufacturing system.  Lego blocks made in Chech republic fits onto blocks made in the U.S. and not only that, they fit onto blocks made thirty years ago.
-
-You can manufacture more, quicker than ever before at higher quality.
-
-\end{comment}
-
 
 
 %------------------------------------------------
@@ -416,59 +414,45 @@ You can manufacture more, quicker than ever before at higher quality.
 \begin{frame}
 \frametitle{Philosophy begin FOSS}
 
-What is the relevance of gauge blocks to libre software?
-The answer is that libre software is the gauge blocks of the software industry.
-All engineers in the world have the opportunity to use standard and benchmarked methods that have taken thousands of hours to develop.
+\begin{center}
+        FOSS is the software equivalent of gauge blocks
+\end{center}
 
-They can share their ideas globally and scale on a level that has never been seen before.
-All this without sacrificing flexibility, since standard methods can be forked and custom developed (while possibly later standardizing itself).  All the while the body of tools can grow.
+\begin{itemize}
+\item All engineers in the world have the opportunity to use standard and benchmarked methods that have taken thousands of hours to develop.
+\item They can share their ideas globally and scale on a level that has never been seen before.
+\item All this without sacrificing flexibility, since standard methods can be forked and custom developed (while possibly later standardizing itself).  All the while the body of tools can grow.
+\end{itemize}
 
-You can analyze and engineer more products, quicker than ever before at higher quality.
+\begin{center}
+        You can analyze and engineer more products, quicker than ever before at higher quality.
+\end{center}
 
 \end{frame}
-
-\begin{comment}
-What is the relevance of gauge blocks to libre software?
-The answer is that libre software is the gauge blocks of the software industry.
-All engineers in the world have the opportunity to use standard and benchmarked methods that have taken thousands of hours to develop.
-
-They can share their ideas globally and scale on a level that has never been seen before.
-All this without sacrificing flexibility, since standard methods can be forked and custom developed (while possibly later standardizing itself).  All the while the body of tools can grow.
-
-You can analyze and engineer more products, quicker than ever before at higher quality.
-\end{comment}
-
-
 
 
 \begin{frame}
 \frametitle{Philosophy begin FOSS}
 
-Gauge blocks standardized measurement and brought metrology out into the open.  This meant that specialized knowledge was not limited to companies or in a previous time, guilds.
+\begin{itemize}
+\item Gauge blocks standardized measurement and brought metrology out into the open.  This meant that specialized knowledge was not limited to companies or in a previous time, guilds.
 
-Similarly libre software brings advanced analysis to any engineer willing to try and use the software.  It is now not limited to companies (in essence macro guilds) with large software budgets.
+\item Similarly libre software brings advanced analysis to any engineer willing to try and use the software.  It is now not limited to companies (in essence macro guilds) with large software budgets.
 
-Standardization increased the gross product of manufacturing immensely over the last century leading to great prosperity for the entities that embraced it.
+\item Standardization increased the gross product of manufacturing immensely over the last century leading to great prosperity for the entities that embraced it.
 
-Libre software has the possiblility of providing just such a platform for innovation to scale exponentially.  Also with the accompanying properity and increase in gross product.
+\item Libre software has the possiblility of providing just such a platform for innovation to scale exponentially.  Also with the accompanying properity and increase in gross product.
 This will be aided by collaborative platforms such as Github that facilitates the large scale sharing of information, methods and contact between engineers.
 
-Thus facilitating the free movement of ideas, intellectual (and consequently monetary) capital and contact between persons.
+\item Thus facilitating the free movement of ideas, intellectual (and consequently monetary) capital and contact between persons.
+
+\end{itemize}
 
 \end{frame}
 
 
 \begin{comment}
-Gauge blocks standardized measurement and brought metrology out into the open.  This meant that specialized knowledge was not limited to companies or in a previous time, guilds.
-
-Similarly libre software brings advanced analysis to any engineer willing to try and use the software.  It is now not limited to companies (in essence macro guilds) with large software budgets.
-
-Standardization increased the gross product of manufacturing immensely over the last century leading to great prosperity for the entities that embraced it.
-
-Libre software has the possiblility of providing just such a platform for innovation to scale exponentially.  Also with the accompanying properity and increase in gross product.
-This will be aided by collaborative platforms such as Github that facilitates the large scale sharing of information, methods and contact between engineers.
-
-Thus facilitating the free movement of ideas, intellectual (and consequently monetary) capital and contact between persons.
+Insert comments here
 \end{comment}
 
 
@@ -494,23 +478,6 @@ The lines are blurring between engineering and software coding.
 All text files are version controlled with git - another software tool
 
 \end{frame}
-
-
-\begin{comment}
-The lines are blurring between engineering and software coding.
-
-Engineering a product has become a software excercise.  For example, in FreeCAD a whole component can be constructed using python commands.  The versions of the CAD document can be controlled by Git, since the script file is a text file.
-The analysis can fully be performed in a text python file.  Or the finite element analysis can be scripted using a text file.
-The results from the FEA run produces large amounts of data, that is once again manipulated by using software tools.
-
-Engineering has become inseparable from software development.
-
-As such it is important to adopt software methodologies in order to manage engineering projects, such as agile project management.  And to adopt the fail early, fail often, fail safe approach.
-
-This has been shown to most degrees to be successful at SpaceX and Tesla.
-\end{comment}
-
-
 
 
 %------------------------------------------------
