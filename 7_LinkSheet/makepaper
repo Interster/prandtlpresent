@@ -1,0 +1,5 @@
+rm An\ investigation\ into\ prying\ models\ in\ tension\ clips.pdf 
+latexmk -pdf An\ investigation\ into\ prying\ models\ in\ tension\ clips.tex 
+makeindex An\ investigation\ into\ prying\ models\ in\ tension\ clips.nlo -s nomencl.ist -o An\ investigation\ into\ prying\ models\ in\ tension\ clips.nls
+rm An\ investigation\ into\ prying\ models\ in\ tension\ clips.pdf 
+latexmk -pdf An\ investigation\ into\ prying\ models\ in\ tension\ clips.tex 
